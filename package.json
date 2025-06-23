@@ -7,10 +7,11 @@
 		"dev": "react-router dev",
 		"start": "react-router-serve ./build/server/index.js",
 		"typecheck": "react-router typegen && tsc",
-		"pretty": "npm run lint && npm run format",
+		"pretty": "npm run format",
 		"lint": "eslint .",
 		"format": "prettier --write .",
-		"prepare": "husky"
+		"prepare": "husky",
+		"lint-staged": "lint-staged"
 	},
 	"dependencies": {
 		"@react-router/node": "^7.5.3",
@@ -35,7 +36,6 @@
 	},
 	"lint-staged": {
 		"*.{*ts,*js,tsx,jsx,md,mdx,css}": [
-			"eslint --fix",
 			"prettier --write"
 		]
 	}
