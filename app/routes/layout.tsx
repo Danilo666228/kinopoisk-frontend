@@ -5,7 +5,7 @@ export default function Layout() {
 	return (
 		<>
 			<Header />
-			<main>
+			<main className='container'>
 				<Outlet />
 			</main>
 			<footer>Footer</footer>

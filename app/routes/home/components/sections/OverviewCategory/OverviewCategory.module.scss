@@ -1,0 +1,70 @@
+.section {
+	margin-top: 200px;
+	display: flex;
+	gap: 80px;
+	flex-direction: column;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	color: var(--color-light);
+}
+
+.description {
+	color: var(--color-grey-60);
+}
+
+.controls {
+	border: 2px solid var(--color-dark-10);
+	border-radius: 10px;
+	background-color: var(--color-dark-06);
+}
+
+.controlsWrapper {
+	display: flex;
+	gap: 5px;
+	padding: 12px;
+	align-items: center;
+}
+
+.navButton {
+	padding: 10px;
+	border: 1px solid var(--color-dark-10);
+
+	&:hover {
+		background-color: var(--color-dark-10);
+	}
+}
+
+.navButtonIcon {
+	transform: rotate(180deg);
+}
+
+.pagination {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.paginationDot {
+	display: flex;
+	width: 18px;
+	height: 4px;
+	border-radius: 10px;
+	background-color: var(--color-grey-60);
+	transition: background-color 0.2s ease;
+}
+
+.body {
+}

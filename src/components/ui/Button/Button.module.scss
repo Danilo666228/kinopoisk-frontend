@@ -1,0 +1,22 @@
+@use '@/styles/helpers' as *;
+
+.button {
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--color-dark-06);
+	background-color: transparent;
+	transition-duration: 0.2s;
+	border-radius: 6px;
+
+	@include hover {
+		opacity: 0.8;
+	}
+}
+
+.outline {
+
+}
+
+.icon {
+	aspect-ratio: 1/1;
+}

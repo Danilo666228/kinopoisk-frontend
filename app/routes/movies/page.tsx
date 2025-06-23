@@ -1,3 +1,3 @@
 export default function MoviesPage() {
-	return <div className='container'>Movies</div>
+	return <div className='container'>movies</div>
 }

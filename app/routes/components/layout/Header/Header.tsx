@@ -1,7 +1,7 @@
-import { SearchIcon } from '@/components/icons'
-import { BellIcon } from '@/components/icons/BellIcon'
 import { Logo } from '@/components/icons/LogoIcon'
+import { Typography } from '@/components/ui/Typography'
 import styles from './Header.module.scss'
+import { HeaderActions } from './HeaderActions'
 import { NavMenu } from './NavMenu'
 
 export const Header = () => {
@@ -10,13 +10,12 @@ export const Header = () => {
 			<div className={styles.inner}>
 				<div className={styles.logo}>
 					<Logo />
-					<h3 className={styles['logo-title']}>StreamVibe</h3>
+					<Typography variant='h1' className={styles['logo-title']}>
+						StreamVibe
+					</Typography>
 				</div>
 				<NavMenu />
-				<div>
-					<SearchIcon width={24} height={24} color='var(--color-light)' />
-					<BellIcon width={24} height={24} color='var(--color-light)' />
-				</div>
+				<HeaderActions />
 			</div>
 		</header>
 	)

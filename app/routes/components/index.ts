@@ -1,2 +1,2 @@
 export * from './layout'
-export * from './sections'
+export * from '../home/components/sections'
