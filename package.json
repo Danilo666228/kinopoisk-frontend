@@ -10,8 +10,7 @@
 		"pretty": "npm run format",
 		"lint": "eslint .",
 		"format": "prettier --write .",
-		"prepare": "husky",
-		"lint-staged": "lint-staged"
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"@react-router/node": "^7.5.3",
@@ -23,13 +22,11 @@
 	},
 	"devDependencies": {
 		"@react-router/dev": "^7.5.3",
-		"@tailwindcss/vite": "^4.1.4",
 		"@types/node": "^20",
 		"@types/react": "^19.1.2",
 		"@types/react-dom": "^19.1.2",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.1.2",
-		"tailwindcss": "^4.1.4",
 		"typescript": "^5.8.3",
 		"vite": "^6.3.3",
 		"vite-tsconfig-paths": "^5.1.4"
