@@ -1,0 +1,35 @@
+.hero {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 412px;
+}
+
+.inner {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+	h1 {
+		font-size: 46px;
+		color: var(--color-light);
+	}
+	p {
+		color: var(--color-grey-60);
+	}
+}
+
+.link {
+	margin-top: 50px;
+	width: fit-content;
+	background-color: var(--color-red-45);
+	border-radius: 8px;
+	text-decoration: none;
+	color: var(--color-light);
+	div {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		padding: 19px 24px;
+	}
+}

@@ -1,0 +1,32 @@
+.nav {
+	border: 3px solid var(--color-dark-10);
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.inner {
+	background-color: var(--color-dark-06);
+	padding: 10px;
+}
+
+.list {
+	display: flex;
+	gap: 5px;
+}
+
+.list a {
+	text-decoration: none;
+}
+
+.item {
+	color: var(--color-grey-75);
+	padding: 14px 24px;
+	border-radius: 12px;
+	text-decoration: none;
+}
+.isActive {
+	background-color: var(--color-dark-10);
+	border-radius: 5px;
+	color: var(--color-light);
+	text-decoration: none;
+}
