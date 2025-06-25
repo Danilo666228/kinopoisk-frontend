@@ -8,6 +8,11 @@
 	transition-duration: 0.2s;
 	border-radius: 6px;
 
+	&.disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+
 	@include hover {
 		opacity: 0.8;
 	}

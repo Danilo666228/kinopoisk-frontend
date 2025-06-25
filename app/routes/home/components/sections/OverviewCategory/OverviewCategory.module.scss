@@ -1,5 +1,7 @@
+@use '@/styles/helpers' as *;
+
 .section {
-	margin-top: 200px;
+	margin-block: 200px;
 	display: flex;
 	gap: 80px;
 	flex-direction: column;
@@ -10,61 +12,103 @@
 	align-items: center;
 	gap: 10px;
 	justify-content: space-between;
-}
 
-.content {
-	display: flex;
-	flex-direction: column;
-}
+	&Wrapper {
+		display: flex;
+		flex-direction: column;
+	}
 
-.title {
-	color: var(--color-light);
-}
+	&Title {
+		color: var(--color-light);
+	}
 
-.description {
-	color: var(--color-grey-60);
-}
-
-.controls {
-	border: 2px solid var(--color-dark-10);
-	border-radius: 10px;
-	background-color: var(--color-dark-06);
-}
-
-.controlsWrapper {
-	display: flex;
-	gap: 5px;
-	padding: 12px;
-	align-items: center;
-}
-
-.navButton {
-	padding: 10px;
-	border: 1px solid var(--color-dark-10);
-
-	&:hover {
-		background-color: var(--color-dark-10);
+	&Description {
+		color: var(--color-grey-60);
 	}
 }
 
-.navButtonIcon {
-	transform: rotate(180deg);
-}
-
 .pagination {
-	display: flex;
-	gap: 10px;
-	align-items: center;
-}
-
-.paginationDot {
-	display: flex;
-	width: 18px;
-	height: 4px;
+	border: 2px solid var(--color-dark-10);
 	border-radius: 10px;
-	background-color: var(--color-grey-60);
-	transition: background-color 0.2s ease;
+	background-color: var(--color-dark-06);
+
+	&Wrapper {
+		display: flex;
+		gap: 10px;
+		padding: 12px;
+		align-items: center;
+	}
+
+	&Btn {
+		padding: 10px;
+		border: 1px solid var(--color-dark-10);
+		background-color: var(--color-dark-10);
+
+		&RightIcon {
+			transform: rotate(180deg);
+		}
+	}
+
+	&Dot {
+		display: flex;
+		width: 18px;
+		height: 4px;
+		border-radius: 10px;
+		background-color: var(--color-grey-60);
+		transition: background-color 0.2s ease;
+
+		&Wrapper {
+			display: flex;
+			gap: 5px;
+		}
+		&Active {
+			background-color: var(--color-red-50);
+		}
+	}
 }
 
-.body {
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	gap: 27px;
+
+	&Item {
+		padding: 30px;
+		border: 1px solid var(--color-dark-10);
+		border-radius: 12px;
+		background-color: var(--color-dark-10);
+		cursor: pointer;
+		transition: all 0.2s ease;
+
+		&Icon {
+			transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+			transform: translateX(5px) rotate(180deg);
+		}
+
+		@include hover {
+			transform: translateY(-5px);
+			transition-duration: 0.5s;
+			.listItemFooter {
+				color: var(--color-red-60);
+
+				.listItemIcon {
+					color: var(--color-red-60);
+					transform: translateX(10px) rotate(180deg);
+				}
+			}
+		}
+		&Header {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&Footer {
+			margin-top: 15px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			color: var(--color-light);
+			transition: color 0.2s ease;
+		}
+	}
 }

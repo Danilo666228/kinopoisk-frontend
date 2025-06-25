@@ -9,9 +9,9 @@ interface ButtonProps extends ComponentProps<'button'> {
 	variant?: ButtonVariant
 }
 
-export const Button = ({ className, children, variant = 'outline', ...props }: ButtonProps) => {
+export const Button = ({ className, children, variant = 'outline', disabled, ...props }: ButtonProps) => {
 	return (
-		<button className={clsx(styles.button, styles[variant], className)} {...props}>
+		<button className={clsx(styles.button, styles[variant], className, disabled && styles.disabled)} {...props}>
 			{children}
 		</button>
 	)
