@@ -1,0 +1,37 @@
+
+.list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+.item {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 40px;
+	border: 1px solid var(--color-dark-10);
+	border-radius: 10px;
+	background: var(--color-dark-08) linear-gradient(23deg, var(--color-dark-08) 70%, rgba(var(--color-red-55-rgb), 0.05) 100%);
+
+	&Icon {
+		padding: 17px 20px;
+		border: 1px solid var(--color-dark-10);
+		background-color: var(--color-dark-08);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 5px;
+	}
+
+	&Header {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+
+	&Content {
+		min-width: 400px;
+		font-size: 14px;
+		font-weight: 300;
+	}
+}

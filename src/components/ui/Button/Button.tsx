@@ -1,3 +1,4 @@
+import { LoaderIcon } from '@/components/icons'
 import clsx from 'clsx'
 import type { ComponentProps } from 'react'
 import styles from './Button.module.scss'
@@ -9,10 +10,10 @@ interface ButtonProps extends ComponentProps<'button'> {
 	variant?: ButtonVariant
 }
 
-export const Button = ({ className, children, variant = 'outline', disabled, ...props }: ButtonProps) => {
+export const Button = ({ className, children, disabled, loading, variant = 'outline', ...props }: ButtonProps) => {
 	return (
 		<button className={clsx(styles.button, styles[variant], className, disabled && styles.disabled)} {...props}>
-			{children}
+			{loading ? <LoaderIcon className='animate-spin' /> : children}
 		</button>
 	)
 }

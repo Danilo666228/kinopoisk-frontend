@@ -1,77 +1,12 @@
 @use '@/styles/helpers' as *;
-
-.section {
-	margin-block: 200px;
-	display: flex;
-	gap: 80px;
-	flex-direction: column;
-}
-
-.header {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	justify-content: space-between;
-
-	&Wrapper {
-		display: flex;
-		flex-direction: column;
-	}
-
-	&Title {
-		color: var(--color-light);
-	}
-
-	&Description {
-		color: var(--color-grey-60);
-	}
-}
-
-.pagination {
-	border: 2px solid var(--color-dark-10);
-	border-radius: 10px;
-	background-color: var(--color-dark-06);
-
-	&Wrapper {
-		display: flex;
-		gap: 10px;
-		padding: 12px;
-		align-items: center;
-	}
-
-	&Btn {
-		padding: 10px;
-		border: 1px solid var(--color-dark-10);
-		background-color: var(--color-dark-10);
-
-		&RightIcon {
-			transform: rotate(180deg);
-		}
-	}
-
-	&Dot {
-		display: flex;
-		width: 18px;
-		height: 4px;
-		border-radius: 10px;
-		background-color: var(--color-grey-60);
-		transition: background-color 0.2s ease;
-
-		&Wrapper {
-			display: flex;
-			gap: 5px;
-		}
-		&Active {
-			background-color: var(--color-red-50);
-		}
-	}
-}
+@use '@/styles/keyframes' as *;
 
 .list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: start;
 	gap: 27px;
+	animation: fadeIn 0.5s ease;
 
 	&Item {
 		padding: 30px;

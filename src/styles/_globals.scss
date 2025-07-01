@@ -1,25 +1,11 @@
 html {
 	scroll-behavior: smooth;
+	scrollbar-width: thin;
 }
 
 body {
-	font-family: 'Inter', sans-serif;
+	font-family: 'Manrope', sans-serif;
 	font-weight: 500;
 	background-color: var(--color-dark-08);
-}
-::-webkit-scrollbar {
-	width: 5px;
-}
-
-::-webkit-scrollbar-track {
-	background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-	background: hsl(var(--border));
-	border-radius: 5px;
-}
-* {
-	scrollbar-width: thin;
-	scrollbar-color: hsl(var(--color-dark)) transparent;
+	color: var(--color-light);
 }

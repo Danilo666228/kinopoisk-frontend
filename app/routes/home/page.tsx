@@ -1,10 +1,12 @@
-import { HeaderBanner, OverviewCategory } from './components/sections'
+import { DeviceProvide, HeaderBanner, OverviewCategory, PopularQuestions } from './components/sections'
 
 export default function HomePage() {
 	return (
 		<>
-			<HeaderBanner />
+			{/* <HeaderBanner /> */}
 			<OverviewCategory />
+			<DeviceProvide />
+			<PopularQuestions />
 		</>
 	)
 }

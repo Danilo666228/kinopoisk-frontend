@@ -5,20 +5,24 @@
 	left: 0;
 	width: 100%;
 	z-index: 10;
+
+	&Wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 162px;
+	}
 }
 
-.inner {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 162px;
-}
 .logo {
-	display: flex;
-	align-items: center;
-	margin-block: 30px;
+	&Wrapper {
+		display: flex;
+		align-items: center;
+		margin-block: 30px;
+		gap: 10px;
+	}
 
-	&-title {
+	&Title {
 		color: var(--color-light);
 	}
 }

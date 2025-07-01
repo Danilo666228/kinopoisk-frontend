@@ -7,10 +7,10 @@ import { NavMenu } from './NavMenu'
 export const Header = () => {
 	return (
 		<header className={styles.header}>
-			<div className={styles.inner}>
-				<div className={styles.logo}>
+			<div className={styles.headerWrapper}>
+				<div className={styles.logoWrapper}>
 					<Logo />
-					<Typography variant='h1' className={styles['logo-title']}>
+					<Typography variant='h2' className={styles.logoTitle}>
 						StreamVibe
 					</Typography>
 				</div>
